@@ -1,0 +1,7 @@
+export const GET_POPULAR = 'GET_POPULAR'
+export const SET_LOADING = 'SET_LOADING'
+export const SEARCH_MOVIES = 'SEARCH_MOVIES'
+export const CLEAR_MOVIES = 'CLEAR_MOVIES'
+export const GET_MOVIE = 'GET_MOVIE'
+export const GET_CREDITS = 'GET_CREDITS'
+export const GET_RECOMENDATIONS = 'GET_RECOMENDATIONS'
