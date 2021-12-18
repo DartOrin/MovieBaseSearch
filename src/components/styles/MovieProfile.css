@@ -1,0 +1,35 @@
+.relative{
+  position: relative;
+}
+
+.backdrop{
+  position: absolute;
+  top: 0;
+  opacity: 0.1;
+  height: 100vh;
+  z-index: 1;
+}
+.poster{
+  height: 400px;
+  margin-right: 20px;
+}
+.title{
+  font-size: 3.5rem;
+  color: #77c486;
+}
+.tagline{
+  font-size: 2rem;
+}
+.overview{
+  font-size: 1.5rem;
+}
+.genres-list{
+  display: flex;
+}
+
+.genre{
+  border-radius: 50%;
+  background-color: #607d8b;
+  padding: 8px;
+  margin: 10px;
+}

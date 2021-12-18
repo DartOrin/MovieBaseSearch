@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 import { MovieContext } from '../context/movieContext/MovieContext';
 
-const Search = () => {
+const Search = ({ onSearch }) => {
   const [value, setValue] = useState('');
   const { search } = useContext(MovieContext)
 
@@ -10,6 +10,7 @@ const Search = () => {
       return
     }
     search(value.trim())
+    onSearch()
   }
 
   return (

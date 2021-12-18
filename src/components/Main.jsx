@@ -4,12 +4,24 @@ import Card from './Card';
 import Loader from './Loader';
 import Search from './Search';
 
-const Main = () => {
+const Main = ({ type, onSearch }) => {
 
-  const { loading, movies } = useContext(MovieContext)
-
+  const { loading, movies, popular } = useContext(MovieContext)
+  if (type === 'popular') {
+    return (
+      <main className='container'>
+        <Search onSearch={onSearch} />
+        {loading
+          ? <Loader />
+          : popular.map(item => (
+            <Card movie={item} key={item.id} search />
+          ))
+        }
+      </main>
+    )
+  }
   return (
-    <div className='container'>
+    <main className='container'>
       <Search />
       {loading
         ? <Loader />
@@ -17,7 +29,7 @@ const Main = () => {
           <Card movie={item} key={item.id} search />
         ))
       }
-    </div>
+    </main>
   );
 };
 

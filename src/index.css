@@ -1,8 +1,9 @@
 * {
   margin: 0 auto;
-  color: #dff3e5;
-  text-shadow: 0px 1px 3px #ffffff;
-  font-family: 'Marck Script', cursive;
+  color: #bfbfbf;
+  text-shadow: 0px 1px 3px #2e3538;
+  font-family: 'Lobster', cursive;
+  z-index: 2;
 }
 body{
   background-image: radial-gradient(circle farthest-corner at center, #3C4B57 0%, #1C262B 100%);
@@ -14,13 +15,15 @@ body{
   justify-content: center;
   align-items: center;
 }
-.slider_container{
+.slider-container{
   width: 600px;
   margin-bottom: 40px;
 }
 
 .search-form{
   width: 50%;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .form-control{
@@ -36,9 +39,6 @@ body{
 }
 
 .loader {
-  /* position: absolute;
-  top: calc(50% - 32px);
-  left: calc(50% - 32px); */
   width: 64px;
   height: 64px;
   border-radius: 50%;
@@ -104,4 +104,11 @@ body{
   100% {
     transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
   }
+}
+
+
+.d-flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
