@@ -22,7 +22,7 @@ const Main = ({ type, onSearch }) => {
   }
   return (
     <main className='container'>
-      <Search />
+      <Search onSearch={onSearch} />
       {loading
         ? <Loader />
         : movies.map(item => (
